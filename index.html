@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adventure Website</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">ADVENTURE</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#Home"></a>Home</li>
+            <li><a href="#Tour">Tours</a></li>
+            <li><a href="#Explore">Explore</a></li>
+            <li><a href="#About">About</a></li>
+            <li class="ctn"><a href="#Contact">Contact</a></li>
+        </ul>
+        <img src="menu.png" alt="" class="menu-btn ">
+    </nav>
+    <!-- Header -->
+    <header>
+        <div class="header-content" id="Home">
+            <h2>Explore the Colourful World</h2>
+            <div class="line"></div>
+            <h1>SEVEN WONDERS OF THE WORLD</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Tours -->
+    <section class="tours" id="Tour">
+        <div class="title">
+            <h1>Upcoming Tours</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="machupichu.jpg" alt="" class="img1">
+                <h4>Machu Pichu View Point</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, repudiandae.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="tajmahal.jpg" alt="" class="img2">
+                <h4>Tajmahal | The Love</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi, repudiandae.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Explore -->
+    <section class="explore" id="Explore">
+        <div class="explore-content">
+            <h1>EXPLORE THE WORLD
+                <div class="line"></div>
+            </h1>
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, enim? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, fugiat?</P>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="About">
+         <div class="row">
+            <div class="col content-col">
+                <h1>UPCOMING TOURS & DESTINATION
+                    <div class="line"></div>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odit culpa quasi vero eaque quia.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="pyramids.jpg" alt="">
+                    <img src="machupichu.jpg" alt="">
+                    <img src="petra.jpg" alt="">
+                    <img src="christ.jpg" alt="">
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" id="Contact">
+        <p>5-122 , Vekanuru , Avanigadda , AndhraPradesh , India | Phone : 9550428979 | Email : varmakanna99@gmail.com</p>
+        <p>Copyright &copy; 2023 Outdoor Adventure</p>
+    </section>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
