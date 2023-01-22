@@ -76,9 +76,21 @@ header{
     text-align: center;
 }
 
-.header-content h2{
+.header-content h2,h1{
     font-size: 4vmin;
+    animation : head 3s ease 0.5s 1;
 }
+
+@keyframes head {
+    from{
+        transform:translateY(-25px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+
 
 .line{
     /* width: 180px; */
